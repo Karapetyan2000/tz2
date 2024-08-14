@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'PPNeueMachina-Regular';
+    src: url(../fonts/PPNeueMachina-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .navbar {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+  }
+  
+  .nav-link {
+    color: #0a4175;
+    position: relative;
+    left: 380px;
+  }
+  
+  .intro-sect {
+    padding-top: 25vh;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .first-slide {
+    background-image: url(../img/back.png);
+    background-size: cover;
+  }
+  
+  .intro-headings1 {
+    text-align: right;
+    color: #0a4175;
+  }
+  
+  .intro-headings1 h1 {
+    position: relative;
+    top: 150px;
+    right: 120px;
+    font-size: 72px;
+  }
+  
+  .intro1, .intro2 {
+    position: relative;
+    top: 150px;
+    right: 88px;
+    font-size: 36px;
+  }
+  
+  .typewriter {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+  
+  .parallax-circle, .parallax-aura {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+  }
+  
+  .parallax-circle {
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, #ff0000, #0000ff);
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .parallax-aura {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    border-radius: 50%;
+    z-index: 0;
+    pointer-events: none;
+  }

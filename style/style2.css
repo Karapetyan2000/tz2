@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'PPNeueMachina-Regular';
+    src: url(../fonts/PPNeueMachina-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .navbar {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+  }
+  
+  .nav-link {
+    color: white;
+    position: relative;
+    left: 380px;
+  }
+  
+  .intro-sect {
+    padding-top: 25vh;
+    height: 100vh;
+    background-image: url(../img/back2.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    transform: translateY(20px);
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
